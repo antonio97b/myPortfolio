@@ -14,10 +14,10 @@ export default Ember.Controller.extend({
       for (var i=0; i<backgrounds.length; i++) {
        (new Image()).src = backgrounds[i];
       }
-      return backgrounds
+      return backgrounds;
     }
 
-    imagesPreload()
+    imagesPreload();
 
     // Background cycle.
     function nextBackground() {

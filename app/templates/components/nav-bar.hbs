@@ -1,6 +1,11 @@
 {{yield}}
 <nav class="navbar navbar-default navbar-static">
   <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      {{#bs-nav-item}}
+        {{#link-to "index" class="navbar-brand"}}Wax Screws{{/link-to}}
+      {{/bs-nav-item}}
+    </ul>
     <ul class="nav navbar-nav navbar-right">
       {{#bs-dropdown tagName="li"}}
         {{#bs-dropdown-toggle}}Projects <span class="caret"></span>{{/bs-dropdown-toggle}}
