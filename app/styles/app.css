@@ -31,7 +31,9 @@ body {
 
 .navbar-nav > li > .dropdown-menu {
   color: red;
-  background-color: rgba(114,169,143, 0.25);
+  /*background-color: rgba(114,169,143, 0.25);*/
+  background-color: rgba(26, 177, 229, 0.25);
+  border-radius: 6px;
 }
 .dropdown-menu > li > a {
   color: white;
