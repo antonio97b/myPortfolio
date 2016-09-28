@@ -1,6 +1,7 @@
 body {
   padding-top: 2em;
-  background-image: url("/images/bg.jpg");
+  background-image: url("/images/binding_dark.png");
+  background-attachment: fixed;
   color: white;
 }
 .navbar-default  {
