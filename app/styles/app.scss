@@ -17,6 +17,10 @@ p {
   font-size: 18px
 }
 
+img {
+  width: 100%;
+}
+
 .navbar-default  {
   background-color: transparent;
   border-style: none;
@@ -43,7 +47,6 @@ p {
 }
 
 .navbar-nav > li > .dropdown-menu {
-  color: red;
   background-color: $blue-pill;
   border-radius: 6px;
 }

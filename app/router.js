@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('projects');
   this.route('contact');
+  this.route('brand-genie');
 });
 
 export default Router;
