@@ -25,18 +25,39 @@ img {
   height: 3em;
   padding-top: 10px;
   border-radius: 0px;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: $tranparent-white-background;
   border-style: none;
   font-size: 24px;
   font-weight: bold;
-
-  .navbar-nav > li > a {
-    color: $white-smoke;
+  .navbar-nav {
+    li {
+      a {
+        color: $white-smoke;
+        &:hover {
+          color: $white-smoke;
+          background-color: $green-pill;
+          border-radius: 6px;
+        }
+      }
+      .dropdown-menu {
+        background-color: $blue-pill;
+        border-radius: 6px;
+        font-size: 16px;
+        li {
+          a {
+            color: $white-smoke;
+            &:hover, &:focus {
+              color: $white-smoke;
+              background-color: $tranparent-white-background;
+            }
+          }
+        }
+      }
+    }
   }
-  .navbar-nav > li > a:hover {
-    color: $white-smoke;
-    background-color: $green-pill;
-    border-radius: 6px;
+  .navbar-brand {
+  font-size: 32px;
+  color: $white-smoke;
   }
   .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: $white-smoke;
@@ -48,23 +69,7 @@ img {
     background-color: $blue-pill;
     border-radius: 6px;
   }
-  .navbar-brand {
-  font-size: 32px;
-  color: $white-smoke;
-  }
-}
 
-.navbar-nav > li > .dropdown-menu {
-  background-color: $blue-pill;
-  border-radius: 6px;
-  font-size: 16px
-}
-.dropdown-menu > li > a {
-  color: $white-smoke;
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  color: $white-smoke;
-  background-color: $tranparent-white-background;
 }
 
 .row-centered {
