@@ -22,10 +22,14 @@ img {
 }
 
 .navbar-default  {
-  background-color: transparent;
+  height: 3em;
+  padding-top: 10px;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, .25);
   border-style: none;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
+
   .navbar-nav > li > a {
     color: $white-smoke;
   }
@@ -44,11 +48,16 @@ img {
     background-color: $blue-pill;
     border-radius: 6px;
   }
+  .navbar-brand {
+  font-size: 32px;
+  color: $white-smoke;
+  }
 }
 
 .navbar-nav > li > .dropdown-menu {
   background-color: $blue-pill;
   border-radius: 6px;
+  font-size: 16px
 }
 .dropdown-menu > li > a {
   color: $white-smoke;
@@ -83,6 +92,7 @@ img {
   height: 100%;
 }
 .portfolio-title-header {
+  padding-top: 28px;
   a {
     text-decoration: none !important;
     color: $white-smoke;
