@@ -6,26 +6,23 @@ $green-pill: rgba(114,169,143, 0.25);
 $tranparent-white-background: rgba(255, 255, 255, 0.25);
 $white-smoke: #F5F5F5;
 
+html {
+  height: 100%;
+}
 body {
   padding-top: 2em;
   background-image: url("/images/binding_dark.png");
   background-attachment: fixed;
   color: white;
+  height: 100%;
 }
-
 p {
   font-size: 18px
 }
-
-img {
-  width: 100%;
-}
-
 .navbar-default  {
-  height: 3em;
   padding-top: 10px;
   border-radius: 0px;
-  background-color: $tranparent-white-background;
+  background-color: transparent;
   border-style: none;
   font-size: 24px;
   font-weight: bold;
@@ -56,7 +53,7 @@ img {
     }
   }
   .navbar-brand {
-  font-size: 32px;
+  font-size: 48px;
   color: $white-smoke;
   }
   .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -76,7 +73,6 @@ img {
   text-align: center;
 }
 .intro-content {
-  padding: 50px 0;
   position: relative;
   h1 {
     color: $white-smoke;
@@ -94,7 +90,13 @@ img {
   overflow: hidden;
 }
 .brandgenie {
-  height: 100%;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 18px;
+  img {
+    height: 75%;
+  }
 }
 .portfolio-title-header {
   padding-top: 28px;
@@ -102,4 +104,19 @@ img {
     text-decoration: none !important;
     color: $white-smoke;
   }
+}
+
+.index-page {
+  text-align: center;
+  p {
+    font-size: 26px;
+  }
+}
+
+.contact-icons {
+  padding: 120px;
+}
+
+.foo {
+  padding: 85px;
 }
