@@ -86,8 +86,8 @@ p {
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: top;
-  overflow: hidden;
 }
 .brandgenie {
   display: block;
@@ -95,7 +95,7 @@ p {
   max-width: 100%;
   font-size: 18px;
   img {
-    height: 60%;
+    width: 100%;
   }
 }
 .portfolio-title-header {
@@ -114,9 +114,5 @@ p {
 }
 
 .contact-icons {
-  padding: 120px;
-}
-
-.foo {
-  padding: 85px;
+  padding: 25%;
 }
